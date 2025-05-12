@@ -66,7 +66,7 @@ const SignUp = () => {
           password: formData.password, 
         });
 
-        window.location.pathname = '/profilee';
+        window.location.pathname = 'profilee';
       }
     } catch (error) {
       console.log("Signup error:", error);
