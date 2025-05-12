@@ -20,7 +20,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         <ul className="space-y-2 sidebar-links">
           <li className="nav-li dash"><NavLink to="/dashboard" onClick={toggleSidebar} id="dashboard"><i className="fa-solid fa-gauge-high"></i> Dashboard</NavLink></li>
           <li className="nav-li"><NavLink to="/income" onClick={toggleSidebar} id="income"><i className="fa-solid fa-dollar-sign"></i> Income</NavLink></li>
-          <li className="nav-li"><NavLink to="/profile" onClick={toggleSidebar} id="profilePage"><i className="fa-solid fa-user"></i> Profile</NavLink></li>
+          <li className="nav-li"><NavLink to="/profilee" onClick={toggleSidebar} id="profilePage"><i className="fa-solid fa-user"></i> Profile</NavLink></li>
           <li className="nav-li"><NavLink to="/security" onClick={toggleSidebar} id="security"><i className="fa-solid fa-lock"></i> Security</NavLink></li>
           <li className="nav-li"><NavLink to="/signup" onClick={toggleSidebar} id="sign"><i className="fa-brands fa-wpforms"></i> SignUp</NavLink></li>
           <li className="nav-li"><NavLink to="/login" onClick={toggleSidebar} id="log"> <i className="fa-brands fa-wpforms"></i> LogIn</NavLink></li>

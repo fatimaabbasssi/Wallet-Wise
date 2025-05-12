@@ -42,7 +42,7 @@ const LogIn = () => {
     let user = userData.user
     alert('Signed-In succesfully')
 
-    if(user){window.location.pathname= '/profile'}
+    if(user){window.location.pathname= '/profilee'}
     
   } catch (error) {
     console.log(error , "in signup function");

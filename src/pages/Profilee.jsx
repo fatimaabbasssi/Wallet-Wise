@@ -7,7 +7,7 @@ doc, getDoc
 from "../firebase/config";
 
 
-const Profile = () => {
+const Profilee = () => {
   const [userData, setUserData] = useState(null);
 
   useEffect(() => {
@@ -63,4 +63,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default Profilee;
