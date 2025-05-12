@@ -1,0 +1,270 @@
+@import "tailwindcss";
+
+button{
+  cursor: pointer;
+}
+
+.top-nav{
+  position: fixed;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  z-index: 999;
+
+}
+
+.toggleBtn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.toggleBtn:hover {
+  border-color: #646cff;
+}
+
+.toggleBtn:focus,
+.toggleBtn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.main-box{
+  padding-top: 4em;
+}
+
+.side{
+  z-index: 1500;
+}
+/* navlink */
+
+.nav-li {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.logo-img {
+  width: 130px;
+  height: 40px;
+  margin-bottom: 2em;
+}
+
+.sidebar-links li {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(0);
+}
+
+.sidebar-links li:hover {
+  background-color: #f9f9f9;
+  border-radius: 25px 0 0 25px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-indent: 0.6em;
+  color: #000000 !important;
+  transform: translateX(16px);
+    background: #314755;
+  background: -webkit-linear-gradient(to right, #76d0fa, #314755);  
+  background: linear-gradient(to right, #d9ecf5, #314755); 
+
+
+  /* background: #403B4A;    //goooood
+background: -webkit-linear-gradient(to right, #E7E9BB, #403B4A); 
+background: linear-gradient(to right, #E7E9BB, #403B4A);  */
+
+}
+
+.add-expense , .backtohome{
+  background: #314755; 
+  background: -webkit-linear-gradient(to right, #76d0fa, #314755); 
+  background: linear-gradient(to right, #d9ecf5, #314755);
+  color: #000000;
+  font-weight: bold;
+}
+
+.total-salary , .updatepass {
+
+background: #3CA55C;  
+background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C); 
+background: linear-gradient(to right, #B5AC49, #3CA55C);
+color: #000000 !important;
+font-weight: 600;
+
+}
+
+.current-salary {
+  background: #314755; 
+  background: -webkit-linear-gradient(to right, #76d0fa, #314755); 
+  background: linear-gradient(to right, #d9ecf5, #314755);
+
+}
+
+
+.login{
+font-weight: bold;
+font-size: 2em;
+text-align: center;
+}
+
+.googlie{
+  height: 20px;
+  width: 20px;
+}
+
+.signUp , .add-income{
+  background: #314755; 
+  background: -webkit-linear-gradient(to right, #76d0fa, #314755); 
+  background: linear-gradient(to right, #d9ecf5, #314755);
+  color: #000000;
+  font-weight: bold;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.signUp:hover , .add-income:hover , .add-expense:hover{
+  background: #1e2f3a; 
+  background: -webkit-linear-gradient(to right, #61b3d9, #243742); 
+  background: linear-gradient(to right, #b5cad4, #1d2d36);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: white;
+}
+
+
+.signOut{
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ font-weight: bold;
+}
+
+.signOut:hover{
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+#sign , #log{
+  display: none;
+}
+
+
+.form{
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+
+
+.form:hover{
+  border:  none;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #000000;
+  }
+
+  .toggleBtn {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (max-width:370px){
+  .main-box{
+    padding: 0.5em;
+    padding-top: 5em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 270px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}*/
