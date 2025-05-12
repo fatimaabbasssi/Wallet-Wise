@@ -19,9 +19,10 @@ function App() {
       children: [
         { index: true, element: <LogIn/>  },
         { path: "/login", element: <LogIn/> },
+        { path: "/profilee", element: <Profilee/> },
         { path: "/income", element: <Income/> },
         { path: "/dashboard", element: <Dashboard /> },
-        { path: "/profilee", element: <Profilee/> },
+        // { path: "/profilee", element: <Profilee/> },
         { path: "/signup", element: <SignUp/> },
         // { path: "/login", element: <LogIn/> },
         { path: "/security", element: <Security/> }, 
