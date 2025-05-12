@@ -17,7 +17,7 @@ function App() {
       path: "/",
       element: <Layout />,
       children: [
-        { index: true, element: <Dashboard/> },
+        // { index: true, element: <Dashboard/> },
         { path: "/login", element: <LogIn/> },
         { path: "/income", element: <Income/> },
         { path: "/dashboard", element: <Dashboard /> },
