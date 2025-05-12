@@ -21,7 +21,7 @@ function App() {
         { path: "/login", element: <LogIn/> },
         { path: "/income", element: <Income/> },
         { path: "/dashboard", element: <Dashboard /> },
-        { path: "/profilee", element: <Profilee /> },
+        { path: "/profilee", element: <Profilee/> },
         { path: "/signup", element: <SignUp/> },
         // { path: "/login", element: <LogIn/> },
         { path: "/security", element: <Security/> }, 
