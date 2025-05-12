@@ -18,6 +18,28 @@ onAuthStateChanged(auth, async (user) => {
   
 
   if (user) {
+
+    if(profilePage){
+        profilePage.style.display = 'block'
+       }
+    
+       if(dash){
+        dash.style.display = 'block'
+       }
+    
+       if(security){
+        security.style.display = 'block'
+       }
+       if(income){
+        income.style.display = 'block'
+       }
+
+       if(sign){
+        sign.style.display = 'none'
+       }
+       if(log){
+        log.style.display = 'none'
+       }
      
       // user
       let userId = user.uid;
