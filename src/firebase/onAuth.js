@@ -56,9 +56,9 @@ onAuthStateChanged(auth, async (user) => {
     log.style.display = 'block'
    }
 
-    // if (window.location.pathname !== '/login') {
-    //   window.location.replace('/login'); // Redirect to login 
-    // }
+    if (window.location.pathname !== '/login') {
+      window.location.replace('/login'); // Redirect to login 
+    }
   }
 });
 
