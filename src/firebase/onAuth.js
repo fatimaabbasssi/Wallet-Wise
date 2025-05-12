@@ -24,7 +24,7 @@ onAuthStateChanged(auth, async (user) => {
       let currentUserRef = doc(db, "Users", userId);
       let currentUser = await getDoc(currentUserRef);
       let singedInUser = currentUser.data()
-      console.log('Logged-In User : ' , singedInUser);
+    //   console.log('Logged-In User : ' , singedInUser);
       
     if (window.location.pathname !== '/profilee') {
       window.location.replace('/profilee'); // Redirect to profile
@@ -56,9 +56,9 @@ onAuthStateChanged(auth, async (user) => {
     log.style.display = 'block'
    }
 
-    if (window.location.pathname !== '/login') {
-      window.location.replace('/login'); // Redirect to login 
-    }
+    // if (window.location.pathname !== '/login') {
+    //   window.location.replace('/login'); // Redirect to login 
+    // }
   }
 });
 
