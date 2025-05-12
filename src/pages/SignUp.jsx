@@ -98,7 +98,7 @@ const SignUp = () => {
         <div className="mb-5">
           <label htmlFor="age" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your age</label>
           <input type="number" name='age' value={formData.age} onChange={handleChange}
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Enter your email" required />
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Enter your age" required />
         </div>
 
         <div className="mb-5">

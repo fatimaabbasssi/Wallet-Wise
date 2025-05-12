@@ -26,9 +26,9 @@ onAuthStateChanged(auth, async (user) => {
       let singedInUser = currentUser.data()
     //   console.log('Logged-In User : ' , singedInUser);
       
-    // if (window.location.pathname !== '/profilee') {
-    //   window.location.replace('/profilee'); // Redirect to profile
-    // }
+    if (window.location.pathname !== '/profilee') {
+      window.location.replace('/profilee'); // Redirect to profile
+    }
   }
 
 
