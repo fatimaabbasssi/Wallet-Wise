@@ -14,6 +14,8 @@ onAuthStateChanged(auth, async (user) => {
   let log = document.getElementById('log')
   let sign = document.getElementById('sign')
 
+  console.log(window.location.pathname );
+  
 
   if (user) {
      
@@ -54,9 +56,9 @@ onAuthStateChanged(auth, async (user) => {
     log.style.display = 'block'
    }
 
-    if (window.location.pathname !== '/login') {
-      window.location.replace('/login'); // Redirect to login 
-    }
+    // if (window.location.pathname !== '/login') {
+    //   window.location.replace('/login'); // Redirect to login 
+    // }
   }
 });
 

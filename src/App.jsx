@@ -3,7 +3,6 @@ import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from './pages/Layout';
 import Dashboard from './pages/Dashboard';
-// import Profile from './pages/PROFILE.JSX';
 import Profilee from './pages/Profilee';
 import Income from './pages/Income';
 import SignUp from './pages/SignUp';
@@ -24,10 +23,10 @@ function App() {
         { path: "profilee", element: <Profilee /> },
         { path: "signup", element: <SignUp/> },
         { path: "login", element: <LogIn/> },
-        { path: "security", element: <Security/> },
-        { path: "*", element: <PageNotFound/> },
+        { path: "security", element: <Security/> }, 
       ],
     },
+    { path: "*", element: <PageNotFound/> },
   ]);
   
 

@@ -53,6 +53,8 @@ const SignUp = () => {
       const userData = await createUserWithEmailAndPassword(auth, formData.email, formData.password);
       const user = userData.user;
 
+      console.log( window.location.pathname);
+      
       alert('Signed-Up succesfully')
       if (user) {
         await setDoc(doc(db, 'Users', user.uid), {
